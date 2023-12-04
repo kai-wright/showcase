@@ -1,0 +1,17 @@
+@import "__variables.scss"; // Import variables for colors
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    // Ensure that the body is at least as tall as the viewport
+    // so that the footer is able to stick to the bottom of the page
+    min-height: 100vh;
+    height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    // Color all default text and background
+    color: $color-element;
+    background-color: $color-base;
+}

@@ -1,0 +1,13 @@
+:root {
+    --color-base: #fdffff;
+    --color-base-lesser: #f5f5f5;
+    --color-element: #37323a;
+    --color-element-lesser: #5d556a;
+    --color-accent-action: #e85042;
+}
+
+$color-base: var(--color-base);
+$color-base-lesser: var(--color-base-lesser);
+$color-element: var(--color-element);
+$color-element-lesser: var(--color-element-lesser);
+$color-accent-action: var(--color-accent-action);

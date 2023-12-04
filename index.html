@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Showcase</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;900&display=swap" rel="stylesheet" />
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				font-family: "Urbanist", sans-serif;
+				/* border: 1px dotted red; */
+			}
+			html {
+				scroll-behavior: smooth;
+			}
+			img {
+				display: block;
+				max-width: 100%;
+				height: auto;
+				font-style: italic;
+				background-size: cover;
+				background-repeat: no-repeat;
+			}
+			:root {
+				--c-light: #f6f6f2;
+				--c-white: #ffffff;
+				--c-dark: #201622;
+			}
+			footer,
+			header {
+				padding: 2rem;
+				text-align: center;
+				font-size: 2rem;
+				font-weight: 900;
+			}
+			h1,
+			h2 {
+				font-weight: 900;
+			}
+			body {
+				background-color: var(--c-light);
+				color: var(--c-dark);
+				min-height: 100vh;
+				display: grid;
+				grid-template-rows: min-content 1fr min-content;
+			}
+			main {
+				padding: 2rem;
+			}
+			.showcase_container {
+				margin: 0 auto;
+				max-width: 1400px;
+				display: grid;
+				/* grid-template-columns: repeat(auto-fill, minmax(min(25rem, 100%), 1fr)); */
+				grid-template-columns: 1fr 1fr 1fr;
+				gap: 2rem;
+			}
+			.showcase_container > * {
+				background-color: var(--c-white);
+				box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.2);
+				color: var(--c-dark);
+				text-decoration: none;
+				transition: all 0.2s;
+			}
+			.showcase_container > *:not(:first-child):hover {
+				transform: scale(1.05);
+			}
+			.showcase_container > * picture,
+			.showcase_container > * img {
+				width: 100%;
+			}
+			.showcase_container > * h2 {
+				text-align: center;
+				margin: 0.5rem 1rem;
+			}
+			.showcase_container > * p {
+				margin: 1rem;
+			}
+			.explanation_container {
+				grid-column-end: span 2;
+				/* grid-row-end: span 2; */
+				padding: 2rem;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}
+			.explanation_links {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				flex-direction: column;
+			}
+			.explanation_links > * {
+				display: flex;
+				align-items: center;
+				text-decoration: none;
+				color: var(--c-dark);
+				transition: transform 0.2s ease-in;
+				transform-origin: left center;
+				width: max-content;
+			}
+			.explanation_links > *:hover {
+				transform: scale(1.1);
+			}
+			.explanation_links > * img {
+				max-height: 3rem;
+				max-width: 3rem;
+			}
+			@media only screen and (max-width: 1000px) {
+				.showcase_container {
+					grid-template-columns: 1fr 1fr;
+				}
+			}
+			@media only screen and (max-width: 700px) {
+				.showcase_container {
+					grid-template-columns: 1fr;
+				}
+				.explanation_container {
+					grid-column-end: span 1;
+					grid-row-end: span 1;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<header><p>Showcase</p></header>
+		<main>
+			<div class="showcase_container">
+				<div class="explanation_container">
+					<h1>Showcase</h1>
+					<p>
+						I have collected some of my works here. Not all are complete works, some are single page
+						websites, some demonstrate a particular concept, principle, design or method.
+						<br /><br />
+						Visit them and pick and learn what you like. Please do not use the large swathes of code,the
+						full page or the theme without reaching out and gaining approval and giving attribution first.
+						<br /><br />
+						Downloading for the sake of play and study however is both highly praised and supported! Thats
+						what this page is for!
+					</p>
+					<div class="explanation_links">
+						<a href="https://kai-wright.github.io/">
+							<img src="./showcase/globe.svg" alt="Globe Icon" />
+							<p>My Website</p>
+						</a>
+						<a href="https://github.com/kai-wright">
+							<img src="./showcase/github.svg" alt="Github Icon" />
+							<p>My Github</p>
+						</a>
+						<a href="https://www.linkedin.com/in/wright-kai">
+							<img src="./showcase/linkedin.svg" alt="LinkedIn Icon">
+							<p>My LinkedIn</p>
+						</a>
+					</div>
+				</div>
+				<a href="./Pan/">
+					<div>
+						<picture>
+							<source media="(min-width:1200px)" src="showcase/pan_600.png" />
+							<source media="(min-width:600px)" src="showcase/pan_300.png" />
+							<img src="showcase/pan_original.png" alt="" />
+						</picture>
+						<h2>Pan</h2>
+						<p>
+							A demo focused on: typewriter text, smart gradients, text gradients, snapping behavior,
+							tablet and mobile adaptations, double contact layout.
+						</p>
+					</div>
+				</a>
+				<a href="./Shatter/">
+					<div>
+						<picture>
+							<source media="(min-width:600px)" src="showcase/shatter_600.png" />
+							<source media="(min-width:300px)" src="showcase/shatter_300.png" />
+							<img src="showcase/shatter_original.png" alt="" />
+						</picture>
+						<h2>Shatter</h2>
+						<p>
+							A demo focused on: light + purple colors, fancy section breaks, pseudo element angles,
+							tiered plan layouts.
+						</p>
+					</div>
+				</a>
+				<a href="./Siren/">
+					<div>
+						<picture>
+							<source media="(min-width:600px)" src="showcase/siren_600.png" />
+							<source media="(min-width:300px)" src="showcase/siren_300.png" />
+							<img src="showcase/siren_original.png" alt="" />
+						</picture>
+						<h2>Siren</h2>
+						<p>
+							A small test case experiment focused on testing different styling structures, folder layouts
+							and modern flex and grid systems. It also was also designed with the possibility of
+							connecting it to a CMS system of some kind in the future.
+						</p>
+					</div>
+				</a>
+			</div>
+		</main>
+		<footer><p>Copyright &copy; Kai Wright 2023<br>All Rights Reserved</p></footer>
+	</body>
+</html>

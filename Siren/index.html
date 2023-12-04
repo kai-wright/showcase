@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="CSS/style.css" />
+		<link rel="stylesheet" href="CSS/home.css" />
+		<title>Siren's Demo</title>
+	</head>
+
+	<body>
+		<header>
+			<a id="logo" href="#">
+				<svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+					<circle cx="256" cy="256.02" r="32" />
+					<path
+						d="M184.25 192.25a96 96 0 000 127.52M327.77 319.77a96 96 0 000-127.52M133.28 141.28a168 168 0 000 229.44M378.72 370.72a168 168 0 000-229.44M435 416a240.34 240.34 0 000-320M77 96a240.34 240.34 0 000 320"
+						fill="none"
+						stroke="currentColor"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="32" />
+				</svg>
+				<p>Siren's Theme</p>
+			</a>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="HTML/about.html">About</a></li>
+					<li><a href="HTML/contact.html">Contact</a></li>
+					<li><a href="HTML/getStarted.html" class="active">Get Started</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<div id="hero" class="hero">
+				<div class="heroText">
+					<h1>Siren's Theme</h1>
+					<p>A smart theme and software bundle for an easy modern blog.</p>
+				</div>
+				<div class="heroImg">
+					<img src="IMG/homepage/siren.jpg" alt="Siren on a rock" />
+				</div>
+			</div>
+
+			<div id="features" class="testimonials">
+				<div>
+					<img src="IMG/homepage/zap.svg" alt="Lightning fast" />
+					<h2>Lightning fast</h2>
+					<p>Siren runs on a minimal amount of resources. It's lightning fast.</p>
+				</div>
+				<div>
+					<img src="IMG/homepage/feather.svg" alt="Lightweight" />
+					<h2>Lightweight</h2>
+					<p>Siren is lightweight and easy to install. It contains only bare requirements to run.</p>
+				</div>
+				<div>
+					<img src="IMG/homepage/smile.svg" alt="Easy to use" />
+					<h2>Easy to use</h2>
+					<p>
+						Siren is easy to use and automate. All you need to do is fill in your details and drop in your
+						blog.
+					</p>
+				</div>
+			</div>
+
+			<div id="testimonials" class="testimonials roundedImages">
+				<div>
+					<img src="IMG/homepage/testimonial-1.jpg" alt="Photo of Jennifer Doe" />
+					<h2>Jennifer Doe</h2>
+					<p>I wish I had found this sooner! Siren is so easy to use and easy to install.</p>
+				</div>
+				<div>
+					<img src="IMG/homepage/testimonial-2.jpg" alt="Photo of Jane Doe" />
+					<h2>Jane Doe</h2>
+					<p>We are so grateful to have found Siren. It's now an essential part of our blog.</p>
+				</div>
+				<div>
+					<img src="IMG/homepage/testimonial-3.jpg" alt="Photo of Jack Doe" />
+					<h2>Jack Doe</h2>
+					<p>Siren is so easy to use and easy to install. I love it!</p>
+				</div>
+				<div>
+					<img src="IMG/homepage/testimonial-4.jpg" alt="Photo of Jill Doe" />
+					<h2>Jill Doe</h2>
+					<p>Who needs WordPress when you have Siren? Siren is so much more scalable.</p>
+				</div>
+			</div>
+		</main>
+		<footer style="flex-direction: column">
+			<p style="text-align: center">
+				Copyright &copy; <a style="color: #fdffff; font-weight: 900; text-decoration: underline;" href="https://kai-wright.github.io/">Kai Wright</a> 2023<br />All Rights Reserved
+			</p>
+			<p style="text-align: center; font-size: 0.8rem; margin-top: 0.4rem; max-width: min(60ch, 60%)">
+				A demo testing different styling structures, folder layouts and modern flex and grid systems. It also
+				was also designed with the possibility of connecting it to a CMS system of some kind in the future.
+			</p>
+		</footer>
+		<a href="../" id="showcase_back">
+			<!-- This is a back button that is not part of the design -->
+			<style>
+				#showcase_back {
+					--color-bg: #37323a;
+					--color-fg: #fdffff;
+					z-index: 10;
+					position: fixed;
+					bottom: 40px;
+					left: 40px;
+					width: max-content;
+					height: 60px;
+
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+
+					cursor: pointer;
+					text-decoration: none;
+					color: var(--color-bg);
+
+					box-sizing: border-box;
+
+					background-color: var(--color-fg);
+					border-radius: 30px;
+				}
+				#showcase_back_arrow {
+					min-width: 60px;
+					min-height: 60px;
+					height: 100%;
+					transition: transform 0.2s linear;
+				}
+				#showcase_back_text {
+					font-size: 20px;
+					max-width: max-content;
+					text-wrap: nowrap;
+					white-space: nowrap;
+					overflow-x: hidden;
+					width: 0px;
+					transition: width 0.5s linear, margin 0.5s linear;
+					font-weight: 900;
+					font-family: Arial, Helvetica, sans-serif;
+				}
+				#showcase_back:hover #showcase_back_text {
+					margin: 0 20px 0 10px;
+					width: 1000px;
+				}
+				#showcase_back:hover #showcase_back_arrow {
+					transform: scale(1.1);
+				}
+			</style>
+			<svg
+				id="showcase_back_arrow"
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 24 24"
+				fill="none"
+				stroke="currentColor"
+				stroke-width="2"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				class="feather feather-arrow-left-circle">
+				<circle cx="12" cy="12" r="10"></circle>
+				<polyline points="12 8 8 12 12 16"></polyline>
+				<line x1="16" y1="12" x2="8" y2="12"></line>
+			</svg>
+			<span id="showcase_back_text">Go back to the showcase</span>
+		</a>
+	</body>
+</html>

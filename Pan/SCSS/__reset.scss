@@ -1,0 +1,27 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	min-height: 100vh;
+	* {
+		font-family: "Montserrat", "Nimbus Sans", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+	}
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	font-style: italic;
+	background-size: cover;
+	background-repeat: no-repeat;
+}

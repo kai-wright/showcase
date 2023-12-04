@@ -1,0 +1,135 @@
+:root {
+  --color-base: #fdffff;
+  --color-base-lesser: #f5f5f5;
+  --color-element: #37323a;
+  --color-element-lesser: #5d556a;
+  --color-accent-action: #e85042;
+}
+
+.testimonials {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: stretch;
+  padding: 0 2em;
+}
+.testimonials > div {
+  flex: 1;
+  background-color: var(--color-base-lesser);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  grid-template-areas: "img" "h2" "p";
+}
+.testimonials > div img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  min-height: 100px;
+  min-width: 100px;
+  height: auto;
+  width: auto;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  padding: 1rem;
+  grid-area: img;
+  margin: auto;
+}
+.testimonials > div h2 {
+  margin-bottom: 10px;
+  grid-area: h2;
+  vertical-align: middle;
+}
+.testimonials > div p {
+  color: #666;
+  grid-area: p;
+  max-width: min(90%, 60ch);
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .testimonials {
+    padding: 0 1em;
+    flex-direction: column;
+  }
+  .testimonials > div {
+    grid-template-columns: max-content 1fr;
+    grid-template-areas: "img h2" "img p";
+  }
+  .testimonials > div img {
+    width: 200px;
+    height: 200px;
+  }
+  .testimonials > div p {
+    max-width: min(80vw, 60ch);
+  }
+}
+@media (max-width: 480px) {
+  .testimonials {
+    padding: 0;
+  }
+  .testimonials > div {
+    border-radius: 0;
+    grid-template-columns: 1fr;
+    grid-template-areas: "img" "h2" "p";
+  }
+  .testimonials > div > * {
+    margin: auto 0;
+  }
+}
+main > div:nth-child(even) {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+main .hero {
+  display: flex;
+  min-height: 50vh;
+  gap: 2rem;
+}
+main .hero > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+main .hero .heroImg img {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+#features > div {
+  padding: 2em;
+}
+
+@media (max-width: 768px) {
+  main .hero {
+    grid-template-columns: 1fr;
+    flex-direction: column-reverse;
+    min-height: fit-content;
+  }
+  main .hero .heroImg img {
+    grid-row: 1;
+    grid-column: 1;
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/*# sourceMappingURL=home.css.map */

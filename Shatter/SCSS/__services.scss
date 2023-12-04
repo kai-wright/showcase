@@ -1,0 +1,11 @@
+#services {
+    #services_box {
+        @include auto-flex(row, 3, 10%);
+        padding: 0 5rem;
+        margin-top: 2rem;
+
+        >div {
+            @include smart-card(3rem);
+        }
+    }
+}

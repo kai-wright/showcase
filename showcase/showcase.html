@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<style>
+	html {
+		background-color: grey;
+	}
+	/* *{border: 1px solid red;} */
+</style>
+
+<!-- This is a code snippet that is inserted into each of the pages showcased -->
+
+<a href="../" id="showcase_back">
+	<!-- This is a back button that is not part of the design -->
+	<style>
+		#showcase_back {
+			--color-bg : black;
+			--color-fg : white;
+			z-index: 10;
+			position: fixed;
+			bottom: 40px;
+			left: 40px;
+			width: max-content;
+			height: 60px;
+
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			cursor: pointer;
+			text-decoration: none;
+			color: var(--color-bg);
+			
+			box-sizing: border-box;
+
+			background-color: var(--color-fg);
+			border-radius: 30px;
+		}
+		#showcase_back_arrow {
+			min-width: 60px;
+			min-height: 60px;
+			height: 100%;
+			transition: transform 0.2s linear;
+		}
+		#showcase_back_text {
+			font-size: 20px;
+			max-width: max-content;
+			text-wrap: nowrap;
+			white-space: nowrap;
+			overflow-x: hidden;
+			width: 0px;
+			transition: width 0.5s linear, margin 0.5s linear;
+			font-weight: 900;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		#showcase_back:hover #showcase_back_text {
+			margin: 0 20px 0 10px;
+			width: 1000px;
+		}
+		#showcase_back:hover #showcase_back_arrow {
+			transform: scale(1.1);
+		}
+	</style>
+	<svg
+		id="showcase_back_arrow"
+		xmlns="http://www.w3.org/2000/svg"
+		viewBox="0 0 24 24"
+		fill="none"
+		stroke="currentColor"
+		stroke-width="2"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+		class="feather feather-arrow-left-circle">
+		<circle cx="12" cy="12" r="10"></circle>
+		<polyline points="12 8 8 12 12 16"></polyline>
+		<line x1="16" y1="12" x2="8" y2="12"></line>
+	</svg>
+	<span id="showcase_back_text">Go back to the showcase</span>
+</a>
+
+<!-- End of the code snippet! -->
+
+<p style="color: rebeccapurple; max-width: 10ch">
+	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum iusto dignissimos corrupti, quisquam accusamus sunt
+	fuga blanditiis doloremque! Facere animi culpa officiis modi voluptatem magni, debitis non nisi odit consequatur?
+	Accusantium hic nesciunt natus veritatis, deleniti ipsum tempora rerum iusto assumenda adipisci laboriosam
+	voluptatum a aliquam provident quibusdam incidunt consectetur dicta quae repudiandae dolore aspernatur unde
+	consequuntur qui. Illo, facilis. Voluptatum dignissimos ipsa rerum suscipit, fugit eum, error minima quis animi
+	deleniti odit labore natus? Rem harum autem itaque omnis quo ipsa facilis placeat, deleniti tempore optio beatae,
+	cumque ratione? Vel doloremque soluta debitis officiis omnis eveniet possimus, repudiandae tenetur nam ipsam, ex
+	inventore sed magnam, veritatis facilis enim veniam voluptatem cumque dolores tempore blanditiis adipisci vitae
+	labore? Doloribus, obcaecati. Blanditiis odit enim, rem, molestiae alias sunt, cupiditate adipisci officiis labore
+	tempora ab sit nulla! Qui porro odit voluptate voluptas in molestiae temporibus exercitationem, dolorem distinctio
+	consequuntur modi. Mollitia, aliquam. Sit delectus velit, numquam aliquid nobis aut ab consequuntur quasi aperiam
+	vel facere illo animi dicta recusandae ut quaerat. Delectus, natus! Dolorem iure obcaecati similique perspiciatis
+	tempora eos autem vel! Magnam exercitationem corporis laudantium praesentium, quaerat aliquid? Molestiae amet quae
+	debitis architecto inventore. Excepturi a corrupti eligendi quasi adipisci, velit repellat sint unde labore pariatur
+	vero ex expedita, iste odio? Maxime alias ut dolorum sunt. Officia, excepturi. Totam asperiores pariatur, obcaecati
+	est consectetur in natus cum assumenda consequatur! Veniam non enim expedita esse animi similique odio dignissimos,
+	illo vero. Voluptatum. Aliquid eveniet, iusto ab ducimus nesciunt natus dignissimos ut adipisci corporis deserunt
+	labore hic. Aperiam temporibus impedit fuga, laboriosam facilis saepe, eligendi dignissimos perferendis officia
+	reprehenderit eos quod. Corporis, inventore? Nobis, nostrum! Necessitatibus quo explicabo voluptatibus harum nam
+	dolores ea. Laudantium fugiat commodi voluptatibus harum! Veritatis, suscipit. Explicabo at recusandae beatae, eum
+	soluta, aliquam vitae odit, perferendis exercitationem ipsum vero?
+</p>

@@ -1,0 +1,23 @@
+// Colors
+
+:root {
+    --color-text: #05051a;
+    --color-background: #ffffff;
+    --color-primary: #8433db;
+    --color-secondary: #f4c7f5;
+    --color-accent: #c924cc;
+}
+
+$color-text: var(--color-text);
+$color-background: var(--color-background);
+$color-primary: var(--color-primary);
+$color-secondary: var(--color-secondary);
+$color-accent: var(--color-accent);
+
+$gradient-standard: linear-gradient(45deg, var(--color-primary), var(--color-accent));
+
+// Font weights
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-heavy: 500;

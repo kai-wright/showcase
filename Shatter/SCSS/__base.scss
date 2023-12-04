@@ -1,0 +1,54 @@
+.wrapper_full {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: min-content 1fr;
+}
+
+.wrapper_gapafter {
+    margin-bottom: 10rem;
+}
+
+.wrapper_background {
+    position: relative;
+
+    .background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: $gradient-standard;
+
+        mask-image: url("../IMG/top_wave.svg");
+        -webkit-mask-image: url("../IMG/top_wave.svg");
+        mask-repeat: no-repeat;
+        -webkit-mask-repeat: no-repeat;
+        mask-size: cover;
+        -webkit-mask-size: cover;
+
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+    }
+}
+
+.wrapper_readable {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10rem 0;
+}
+
+section:not(#hero) {
+    @include angled-section($gradient-standard);
+}
+
+@media (max-width: 768px) {
+    .wrapper_readable {
+        padding: 5rem 0;
+    }
+
+    .wrapper_gapafter {
+        margin-bottom: 5rem;
+    }
+
+}

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="CSS/style.css" />
+		<title>Document</title>
+	</head>
+
+	<body>
+		<div class="wrapper_full wrapper_background wrapper_gapafter">
+			<div class="background"></div>
+			<header>
+				<a id="logo" href="#">The Super Cool Company</a>
+				<nav>
+					<ul>
+						<li><a href="#about_heading">About</a></li>
+						<li><a href="#services_heading">Services</a></li>
+						<li><a href="#pricing_heading">Pricing</a></li>
+						<li><a href="#contact_heading">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
+			<section id="hero">
+				<hgroup>
+					<h2>We know how to do it.</h2>
+					<p>That's why we're here to fill this empty space with some awesome content.</p>
+				</hgroup>
+			</section>
+		</div>
+		<section id="about">
+			<div class="wrapper_readable">
+				<h2 id="about_heading">About us</h2>
+				<p>We're a 1 man, 1 cat team who love making websites. We're here to accompany you on your journey.</p>
+				<br />
+				<h3>Our team</h3>
+				<p>We're a team of nerds who love making websites.</p>
+				<div id="about_team">
+					<div>
+						<img src="IMG/human.jpeg" alt="The human" />
+						<h4>The Human</h4>
+						<p>The human does most of the work, he relies on his assistant to do the rest.</p>
+					</div>
+					<div>
+						<img src="IMG/assistant.jpeg" alt="The cat" />
+						<h4>The Assistant</h4>
+						<p>The assistant is highly skilled and efficient, he just doesn't care.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="services">
+			<div class="wrapper_readable">
+				<h2 id="services_heading">Services</h2>
+				<p>We offer a variety of services.</p>
+				<div id="services_box">
+					<div>
+						<img src="IMG/key.svg" alt="" />
+						<h3>Service One</h3>
+						<p>A super important thing</p>
+					</div>
+					<div>
+						<img src="IMG/pen-tool.svg" alt="" />
+						<h3>Service Two</h3>
+						<p>Totally awesome information</p>
+					</div>
+					<div>
+						<img src="IMG/book-open.svg" alt="" />
+						<h3>Service Three</h3>
+						<p>Vastly super importantly good to know</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="pricing">
+			<div class="wrapper_readable">
+				<h2 id="pricing_heading">Pricing</h2>
+				<p>We offer a variety of pricing plans.</p>
+				<div id="pricing_box">
+					<div>
+						<div>
+							<h3>Basic</h3>
+							<p>$9.99</p>
+							<ul>
+								<li>Basic stuff</li>
+								<li>Default features</li>
+								<li>Common or garden abilities</li>
+							</ul>
+						</div>
+						<p>For the basics</p>
+					</div>
+					<div>
+						<div>
+							<h3>Advanced</h3>
+							<p>$19.99</p>
+							<ul>
+								<li><b>Everything in basic plus</b></li>
+								<li>More advanced stuff</li>
+								<li>Extra features</li>
+								<li>Uncommon abilities</li>
+								<li>Lots of stuff</li>
+								<li>Support and maintenance</li>
+								<li>Everything else</li>
+							</ul>
+						</div>
+						<p>For advanced users</p>
+					</div>
+					<div>
+						<div>
+							<h3>Premium</h3>
+							<p>$29.99</p>
+							<ul>
+								<li>Everything in advanced plus</li>
+								<li>Custom features</li>
+								<li>Expidited support</li>
+							</ul>
+						</div>
+						<p>For the elite</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="contact">
+			<div class="wrapper_readable">
+				<h2 id="contact_heading">Contact us</h2>
+				<p>We're here to help you.</p>
+			</div>
+		</section>
+		<footer id="footer" style="margin-top: 10rem; flex-direction: column">
+			<p style="text-align: center">
+				Copyright &copy; <a href="https://kai-wright.github.io/">Kai Wright</a> 2023<br />All Rights Reserved
+			</p>
+			<p style="text-align: center; font-size: 0.8rem; margin-top: 0.4rem; max-width: min(60ch, 60%)">
+				A demo demonstrating the following points of interest - light + purple colors, fancy section breaks,
+				pseudo element angles, tiered plan layouts.
+			</p>
+		</footer>
+		<a href="../" id="showcase_back">
+			<!-- This is a back button that is not part of the design -->
+			<style>
+				#showcase_back {
+					--color-bg: black;
+					--color-fg: white;
+					z-index: 10;
+					position: fixed;
+					bottom: 40px;
+					left: 40px;
+					width: max-content;
+					height: 60px;
+
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+
+					cursor: pointer;
+					text-decoration: none;
+					color: var(--color-bg);
+
+					box-sizing: border-box;
+
+					background-color: var(--color-fg);
+					border-radius: 30px;
+				}
+				#showcase_back_arrow {
+					min-width: 60px;
+					min-height: 60px;
+					height: 100%;
+					transition: transform 0.2s linear;
+				}
+				#showcase_back_text {
+					font-size: 20px;
+					max-width: max-content;
+					text-wrap: nowrap;
+					white-space: nowrap;
+					overflow-x: hidden;
+					width: 0px;
+					transition: width 0.5s linear, margin 0.5s linear;
+					font-weight: 900;
+					font-family: Arial, Helvetica, sans-serif;
+				}
+				#showcase_back:hover #showcase_back_text {
+					margin: 0 20px 0 10px;
+					width: 1000px;
+				}
+				#showcase_back:hover #showcase_back_arrow {
+					transform: scale(1.1);
+				}
+			</style>
+			<svg
+				id="showcase_back_arrow"
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 24 24"
+				fill="none"
+				stroke="currentColor"
+				stroke-width="2"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				class="feather feather-arrow-left-circle">
+				<circle cx="12" cy="12" r="10"></circle>
+				<polyline points="12 8 8 12 12 16"></polyline>
+				<line x1="16" y1="12" x2="8" y2="12"></line>
+			</svg>
+			<span id="showcase_back_text">Go back to the showcase</span>
+		</a>
+	</body>
+</html>

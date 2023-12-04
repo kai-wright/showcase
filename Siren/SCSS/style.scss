@@ -1,0 +1,17 @@
+// @import "__debug.scss"; // Debugging only not for production
+
+@import "__reset.scss";
+@import "__base.scss";
+@import "__typography.scss";
+@import "__variables.scss";
+@import "__header.scss";
+@import "__main.scss";
+@import "__footer.scss";
+
+// Below are general purpose styles
+
+.roundedImages {
+    img {
+        border-radius: 50%;
+    }
+}

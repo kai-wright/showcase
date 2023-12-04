@@ -1,0 +1,16 @@
+.p_layout_full {
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: min-content 1fr;
+}
+
+.p_flex_h {
+    display: flex;
+    flex-direction: row;
+}
+.p_flex_v {
+    display: flex;
+    flex-direction: column;
+}

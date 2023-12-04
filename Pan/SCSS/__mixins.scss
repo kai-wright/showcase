@@ -1,0 +1,8 @@
+@mixin text_gradient($alt-color,$angle,$gradient-start,$gradient-end) {
+    color: $alt-color;
+
+    background: linear-gradient($angle,$gradient-start,$gradient-end);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

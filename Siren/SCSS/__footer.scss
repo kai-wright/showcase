@@ -1,0 +1,18 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $color-element;
+    color: $color-base;
+
+    padding: 1em;
+
+    a {
+        text-decoration: none;
+    }
+
+    p {
+        text-align: center;
+    }
+}

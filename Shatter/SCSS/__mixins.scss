@@ -1,0 +1,90 @@
+// Underlining links
+
+@mixin underline-links($color: var(--color-accent)) {
+    a {
+        text-decoration: none;
+
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: $color;
+            transition: width 0.3s ease-in-out;
+            pointer-events: none;
+
+            @media (prefers-reduced-motion: reduce) {
+                transition: none;
+            }
+        }
+
+        &:hover {
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@mixin angled-section($color: var(--color-accent)) {
+    &:nth-child(even) {
+        position: relative;
+        color: var(--color-background);
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: $color;
+            z-index: -1;
+            transform: skewY(-5deg);
+        }
+    }
+}
+
+@mixin auto-flex($direction: row, $count: 1, $gap: 1rem) {
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: wrap;
+    gap: $gap;
+    justify-content: space-between;
+    align-items: stretch;
+
+    >* {
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: calc(100% / #{$count} - $gap);
+    }
+}
+
+@mixin smart-card($img-padding : 0) {
+    border-radius: 1.5rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: auto;
+        padding: $img-padding;
+    }
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 0 1rem 1rem 1rem;
+        text-align: center;
+    }
+
+    p {
+        margin: 0 1rem 1rem 1rem;
+    }
+}

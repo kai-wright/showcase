@@ -1,0 +1,23 @@
+#about {
+    #about_team {
+        @include auto-flex(row, 2, 5rem);
+        max-width: 600px;
+        margin: 3rem auto 0 auto;
+
+        >div {
+            @include smart-card(1rem);
+            background: $color-background;
+            color: $color-text;
+
+            img {
+                // border-radius: 50%;
+                box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+                padding: 0;
+                max-width: 100%;
+                width: 100%;
+                height: auto;
+
+            }
+        }
+    }
+}
