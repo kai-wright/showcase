@@ -1,0 +1,9 @@
+:root {
+	--color-base-1: #14171aff;
+	--color-base-2: #161d25ff;
+	--color-base-3: #393f46ff;
+	--color-item-1: #7f8387ff;
+	--color-item-2: #fbfbfbff;
+}
+
+$gradient-accent: 135deg, var(--color-base-1), var(--color-base-2);

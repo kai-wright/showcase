@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./CSS/style.css" />
+
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+		<link rel="manifest" href="/site.webmanifest" />
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+		<meta name="msapplication-TileColor" content="#da532c" />
+		<meta name="theme-color" content="#ffffff" />
+
+		<!-- Primary Meta Tags -->
+		<title>Stellar - Explore Our Solar System</title>
+		<meta name="title" content="Stellar - Explore Our Solar System" />
+		<meta
+			name="description"
+			content="Stellar presents a clean and informative interface for exploring our solar system, featuring simple SVG representations and concise explanations of the Sun, planets, and celestial bodies." />
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://kai-wright.github.io/showcase/Stellar/" />
+		<meta property="og:title" content="Stellar - Explore Our Solar System" />
+		<meta
+			property="og:description"
+			content="Stellar presents a clean and informative interface for exploring our solar system, featuring simple SVG representations and concise explanations of the Sun, planets, and celestial bodies." />
+		<meta property="og:image" content="./meta.png" />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content="https://kai-wright.github.io/showcase/Stellar/" />
+		<meta property="twitter:title" content="Stellar - Explore Our Solar System" />
+		<meta
+			property="twitter:description"
+			content="Stellar presents a clean and informative interface for exploring our solar system, featuring simple SVG representations and concise explanations of the Sun, planets, and celestial bodies." />
+		<meta property="twitter:image" content="./meta.png" />
+
+		<!-- Meta Tags Generated with https://metatags.io -->
+	</head>
+	<body>
+		<div class="max_h_wrapper">
+			<div class="main_background">
+				<img src="IMG/main_background.svg" alt="" />
+			</div>
+			<header>
+				<div id="header_logo">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="64"
+						height="64"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						class="feather feather-stop-circle">
+						<circle cx="12" cy="12" r="10"></circle>
+						<rect x="9" y="9" width="6" height="6"></rect>
+					</svg>
+				</div>
+				<div id="header_seperator">
+					<hr />
+				</div>
+				<nav id="header_nav">
+					<ol id="navbar">
+						<li id="nav_sun">
+							<p>The Sun</p>
+						</li>
+						<li id="nav_mercury">
+							<p>Mercury</p>
+						</li>
+						<li id="nav_venus">
+							<p>Venus</p>
+						</li>
+						<li id="nav_earth">
+							<p>Earth</p>
+						</li>
+						<li id="nav_mars">
+							<p>Mars</p>
+						</li>
+						<li id="nav_jupiter">
+							<p>Jupiter</p>
+						</li>
+						<li id="nav_saturn">
+							<p>Saturn</p>
+						</li>
+						<li id="nav_uranus">
+							<p>Uranus</p>
+						</li>
+						<li id="nav_neptune">
+							<p>Neptune</p>
+						</li>
+					</ol>
+				</nav>
+			</header>
+			<main>
+				<div class="button_wrapper">
+					<span id="left_arrow">
+						<img src="./IMG/arrow-left.svg" alt="Go to previous planet" />
+					</span>
+					<span id="right_arrow">
+						<img src="./IMG/arrow-right.svg" alt="Go to next planet" />
+					</span>
+				</div>
+				<section id="hero">
+					<img id="hero_image" src="./IMG/0_sun.svg" alt="Drawing of the sun" />
+					<div id="hero_info">
+						<h2 id="hero_title">The Sun</h2>
+						<p id="hero_content">A big ball of fire!</p>
+					</div>
+				</section>
+			</main>
+		</div>
+		<script src="JS/orbit.js" defer></script>
+		<a href="../" id="showcase_back">
+			<!-- This is a back button that is not part of the design -->
+			<style>
+				#showcase_back {
+					--color-bg : white;
+					--color-fg : transparent;
+					z-index: 100;
+					position: fixed;
+					bottom: 40px;
+					left: 40px;
+					width: max-content;
+					height: 60px;
+		
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+		
+					cursor: pointer;
+					text-decoration: none;
+					color: var(--color-bg);
+					
+					box-sizing: border-box;
+		
+					background-color: var(--color-fg);
+					border-radius: 30px;
+				}
+				#showcase_back_arrow {
+					min-width: 60px;
+					min-height: 60px;
+					height: 100%;
+					transition: transform 0.2s linear;
+				}
+				#showcase_back_text {
+					font-size: 20px;
+					max-width: max-content;
+					text-wrap: nowrap;
+					white-space: nowrap;
+					overflow-x: hidden;
+					width: 0px;
+					transition: width 0.5s linear, margin 0.5s linear;
+					font-weight: 900;
+					font-family: Arial, Helvetica, sans-serif;
+				}
+				#showcase_back:hover #showcase_back_text {
+					margin: 0 20px 0 10px;
+					width: 1000px;
+				}
+				#showcase_back:hover #showcase_back_arrow {
+					transform: scale(1.1);
+				}
+			</style>
+			<svg
+				id="showcase_back_arrow"
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 24 24"
+				fill="none"
+				stroke="currentColor"
+				stroke-width="2"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				class="feather feather-arrow-left-circle">
+				<circle cx="12" cy="12" r="10"></circle>
+				<polyline points="12 8 8 12 12 16"></polyline>
+				<line x1="16" y1="12" x2="8" y2="12"></line>
+			</svg>
+			<span id="showcase_back_text">Go back to the showcase</span>
+		</a>
+	</body>
+</html>
