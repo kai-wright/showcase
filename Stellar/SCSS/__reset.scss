@@ -1,5 +1,10 @@
 // Better default reset
 
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+	all: unset;
+	display: revert;
+}
+
 *,
 *::before,
 *::after {
@@ -11,7 +16,7 @@
 html {
 	//color-scheme: light dark; // design for a light mode by default
 	scroll-behavior: smooth; // Use smooth scroll
-    text-rendering: optimizeSpeed; // Fast load content
+	text-rendering: optimizeSpeed; // Fast load content
 }
 
 body {
@@ -27,7 +32,7 @@ canvas {
 
 	height: auto; // Provides a basis to scale the image
 	max-width: 100%; // Prevents overflow
-    max-height: 100%; // Prevents overflow
+	max-height: 100%; // Prevents overflow
 
 	font-style: italic; // Makes alt text differ from standard content
 

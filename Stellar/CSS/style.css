@@ -1,3 +1,8 @@
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+  all: unset;
+  display: revert;
+}
+
 *,
 *::before,
 *::after {
@@ -109,10 +114,13 @@ header > div#header_logo {
 header > div#header_logo::before {
   content: "";
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 0 1rem 1rem 0;
   inset: 0;
   z-index: -1;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 header > div#header_seperator {
   flex-grow: 1;
@@ -129,6 +137,9 @@ header nav#header_nav::before {
   border-radius: 1rem 0 0 1rem;
   inset: 0;
   z-index: -1;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 header nav#header_nav ol {
   display: flex;

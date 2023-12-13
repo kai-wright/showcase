@@ -39,10 +39,14 @@ header {
 		&::before {
 			content: "";
 			position: absolute;
-			background-color: rgba(255, 255, 255, 0.1);
+			background: rgba(255, 255, 255, 0.1);
 			border-radius: 0 1rem 1rem 0;
 			inset: 0;
 			z-index: -1;
+
+			box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+			backdrop-filter: blur(8px);
+			-webkit-backdrop-filter: blur(8px);
 		}
 	}
 
@@ -62,6 +66,9 @@ header {
 			border-radius: 1rem 0 0 1rem;
 			inset: 0;
 			z-index: -1;
+			box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+			backdrop-filter: blur(8px);
+			-webkit-backdrop-filter: blur(8px);
 		}
 		ol {
 			display: flex;
@@ -112,7 +119,7 @@ main {
 			position: absolute;
 			left: 0;
 			&:hover {
-				background: radial-gradient(rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0) 50% 50%);
+				background: radial-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 50% 50%);
 				background-position: right;
 			}
 		}
@@ -120,7 +127,7 @@ main {
 			position: absolute;
 			right: 0;
 			&:hover {
-				background: radial-gradient(rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0) 50% 50%);
+				background: radial-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 50% 50%);
 				background-position: left;
 			}
 		}

@@ -2,6 +2,9 @@
     "compilerOptions": {
       "target": "ES5",
       "module": "CommonJS",
-      "sourceMap": true
-    }
+      "resolveJsonModule": true,
+      "sourceMap": true,
+      "lib": ["dom","ES2015"]
+    },
+    "include": ["JS"]
   }
